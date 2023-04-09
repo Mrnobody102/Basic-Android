@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.lecturer.LecturerMarkStudentActivity">
+    <LinearLayout
+        android:paddingHorizontal="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtClassName"
+            android:layout_marginVertical="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="ClassName"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:id="@+id/txtSkill"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="3dp"
+                    android:text="Skill"
+                    android:textColor="@color/black"
+                    android:textSize="14dp"
+                    android:layout_marginTop="6dp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spSkill"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="12dp"
+                    android:hint="StartLevel"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/txtLecturer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Lecturer: "
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcyList"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false"
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:nestedScrollingEnabled="false"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="1"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnUpdate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_btn_log_in"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:text="Update"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

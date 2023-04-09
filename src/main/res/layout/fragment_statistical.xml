@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:paddingHorizontal="32dp">
+
+
+    <TextView
+        android:layout_marginVertical="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Statistical"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Month"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Number of student registered per month:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberMonth1"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Number of courses sold:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberMonth2"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Total monthly revenue:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberMonth3"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="In Year"
+        android:layout_marginTop="45dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="22dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Number of student registered per year:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberYear1"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Number of courses sold:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberYear2"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="Total yearly revenue:"
+            android:gravity="center_vertical"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/txtNumberYear3"
+            android:layout_width="80dp"
+            android:text="100"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:paddingRight="12dp"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

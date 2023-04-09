@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:paddingVertical="8dp"
+    android:background="@drawable/bg_boder_black_radius_8"
+    android:paddingHorizontal="20dp"
+    android:layout_marginBottom="20dp"
+    android:layout_height="210dp">
+
+    <TextView
+        android:id="@+id/txtNotificationTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Title:"
+        android:gravity="left"
+        android:textSize="17dp"
+        android:maxLength="200"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Date:"
+            android:textSize="12dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:paddingLeft="8dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="dd/MM/yyyy"
+            android:textSize="12dp"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <TextView
+            android:id="@+id/txtContent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Content"
+            android:textSize="17dp"
+            android:maxLength="200"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnDetail"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_log_in"
+        android:layout_gravity="center"
+        android:text="Details"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>
